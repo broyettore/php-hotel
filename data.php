@@ -82,7 +82,7 @@
                     </li>
                     <li class="my-3">
                         <?php
-                        echo "Hotel Selected: " . $clientHotel
+                        echo "Pet/s: " . $clientHotel
                         ?>
                     </li>
                     <li class="my-3">

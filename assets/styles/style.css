@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Merriweather', serif;
+    scroll-behavior: smooth;
 }
 
 :root {
