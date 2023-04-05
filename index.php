@@ -113,28 +113,137 @@
             </div>
         </section>
         <section id="services" class="d-flex flex-column align-items-center justify-content-center">
-            <div class="container ms-ctn d-flex flex-column align-items-start justify-content-center p-3">
+            <div class="container ms-ctn d-flex flex-column align-items-start justify-content-center p-4">
                 <h2 class="m-2">Services</h2>
                 <div class="services-options m-2">
-                    <ul>
-                        <li>
-                            <?php echo "Name: " . $hotels[0]["name"] ?>
-                        </li>
-                        <li>
-                            <?php echo "Description: " . $hotels[0]["description"] ?>
-                        </li>
-                        <li>
-                            <?php if($hotels[0]["parking"] === true) {
-                                echo $hotels[0]["parking"] = "Parking: " . "yes";
-                            } ?>
-                        </li>
-                        <li>
-                            <?php echo "Vote: " . $hotels[0]["vote"] ?>
-                        </li>
-                        <li>
-                            <?php echo "Distance to center: " . $hotels[0]["distance_to_center"] ?>
-                        </li>
-                    </ul>
+                    <table class="table ms-table my-2">
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                Hotel Name
+                                </th>
+                                <th scope="col">
+                                Description
+                                </th>
+                                <th scope="col">
+                                Parking
+                                </th>
+                                <th scope="col">
+                                Review
+                                </th>
+                                <th scope="col">
+                                Distance to Center
+                                </th>
+                            </tr>
+                        </thead>
+                    <tbody>
+                            <tr>
+                                <th scope="row">
+                                <?php echo $hotels[0]["name"] ?>
+                                </th>
+                                <td>
+                                <?php echo $hotels[0]["description"] ?>
+                                </td>
+                                <td>
+                                    <?php if($hotels[0]["parking"] === true) {
+                                        echo $hotels[0]["parking"] = "Yes";
+                                    } else {
+                                        echo $hotels[0]["parking"] = "No";
+                                    } ?>
+                                </td>
+                                <td>
+                                    <?php echo $hotels[0]["vote"] ?>
+                                </td>
+                                <td>
+                                    <?php echo $hotels[0]["distance_to_center"] ?>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                <?php echo $hotels[1]["name"] ?>
+                                </th>
+                                <td>
+                                <?php echo $hotels[1]["description"] ?>
+                                </td>
+                                <td>  
+                                    <?php if($hotels[1]["parking"] === true) {
+                                        echo $hotels[1]["parking"] = "Yes";
+                                    } else {
+                                        echo $hotels[1]["parking"] = "No";
+                                    } ?>
+                                    </td>
+                                <td>
+                                    <?php echo $hotels[1]["vote"] ?>
+                                </td>
+                                <td>
+                                    <?php echo $hotels[1]["distance_to_center"] ?>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                <?php echo $hotels[2]["name"] ?>
+                                </th>
+                                <td>
+                                <?php echo $hotels[2]["description"] ?>
+                                </td>
+                                <td>
+                                    <?php if($hotels[2]["parking"] === true) {
+                                        echo $hotels[2]["parking"] = "Yes";
+                                    } else {
+                                        echo $hotels[2]["parking"] = "No";
+                                    } ?>
+                                </td>
+                                <td>
+                                    <?php echo $hotels[2]["vote"] ?>
+                                </td>
+                                <td>
+                                    <?php echo $hotels[2]["distance_to_center"] ?>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                <?php echo $hotels[3]["name"] ?>
+                                </th>
+                                <td>
+                                <?php echo $hotels[3]["description"] ?>
+                                </td>
+                                <td>
+                                    <?php if($hotels[3]["parking"] === true) {
+                                        echo $hotels[3]["parking"] = "Yes";
+                                    } else {
+                                        echo $hotels[3]["parking"] = "No";
+                                    } ?>
+                                </td>
+                                <td>
+                                    <?php echo $hotels[3]["vote"] ?>
+                                </td>
+                                <td>
+                                    <?php echo $hotels[3]["distance_to_center"] ?>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                <?php echo $hotels[4]["name"] ?>
+                                </th>
+                                <td>
+                                <?php echo $hotels[4]["description"] ?>
+                                </td>
+                                <td>
+                                    <?php if($hotels[4]["parking"] === true) {
+                                        echo $hotels[4]["parking"] = "Yes";
+                                    } else {
+                                        echo $hotels[4]["parking"] = "No";
+                                    } ?>
+                                </td>
+                                <td>
+                                    <?php echo $hotels[4]["vote"] ?>
+                                </td>
+                                <td>
+                                    <?php echo $hotels[4]["distance_to_center"] ?>
+                                </td>
+                            </tr>
+                    </tbody>
+                    </table>
                 </div>
             </div>
         </section>

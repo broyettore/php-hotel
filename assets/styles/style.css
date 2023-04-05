@@ -106,6 +106,12 @@ header h1:hover {
 .ms-btn-light:hover {
     background-color: var(--headers-color);
 }
+
+.ms-table th,
+.ms-table td {
+    color: var(--font-color);
+    padding: 10px 5px;
+}
 /************ MEDIA QUERIES ************/
 
 /* @media only screen and (max-device-width: 992px) {
