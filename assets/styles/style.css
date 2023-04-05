@@ -49,8 +49,11 @@ a {
 
 header {
     background-color: var(--bg-color);
-    opacity: 0.7;
     color: var(--font-color);
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 100;
 }
 
 h1 > a {
@@ -71,16 +74,31 @@ header h1:hover {
 
 /**************** MAIN ***************/
 
-#jumbo {
-    height: calc(100vh - 72px);
+#jumbo,
+#about,
+#booking {
+    height: 100vh;
 }
 
-.ms-ctn {
+.ms-ctn,
+.ms-ctn-result {
     height: 80%;
     background-color: var(--bg-color);
     color: var(--font-color);
     opacity: 0.9;
     border-radius: 5%;
+}
+
+#jumbo .ms-ctn {
+    height: 70%;
+}
+
+#booking .ms-ctn {
+    height: 60%;
+}
+
+.ms-ctn-result {
+    height: 50%;
 }
 
 #jumbo .ms-ctn > div,
@@ -91,6 +109,10 @@ header h1:hover {
 .ms-btn-info,
 .ms-btn-light {
     padding: 10px 20px;
+}
+
+.ms-btn-info a,
+.ms-btn-light a {
     color: var(--font-color);
 }
 
