@@ -44,11 +44,6 @@
     $clientEmail = $_GET["clientEmail"];
     $clientHotel = $_GET["clientHotel"];
     $parking = $_GET["parkingOption"];
-    
-    echo "<prev>";
-    var_dump(isset($parking));
-    echo "</prev>";
-
 ?>
 
 <!DOCTYPE html>

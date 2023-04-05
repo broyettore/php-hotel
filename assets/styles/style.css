@@ -82,23 +82,23 @@ header h1:hover {
 
 .ms-ctn,
 .ms-ctn-result {
-    height: 80%;
+    height: 60%;
     background-color: var(--bg-color);
     color: var(--font-color);
     opacity: 0.9;
     border-radius: 5%;
-}
-
-#jumbo .ms-ctn {
-    height: 70%;
+    max-width: 50%;
+    width: 100%;
 }
 
 #booking .ms-ctn {
-    height: 60%;
+    max-width: 25%;
 }
+
 
 .ms-ctn-result {
     height: 50%;
+    max-width: 30%;
 }
 
 #jumbo .ms-ctn > div,
