@@ -1,0 +1,83 @@
+/************ RESET ****************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+}
+
+:root {
+
+    /* color scheme  */
+
+    --bg-color: #161616;
+    --alt-bg-color: #5da98a;
+    --headers-color: #a83023;
+    --font-color: #fff;
+}
+
+/************* COMMON ***********/
+
+.parallax {
+  background-image: url("../images/hotel-img.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/**************** HEADER ***************/
+
+header {
+    background-color: var(--bg-color);
+    opacity: 0.7;
+    color: var(--font-color);
+}
+
+h1 > a {
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+header a {
+    color: var(--font-color);
+}
+
+header a:hover,
+header h1:hover {
+    color: var(--alt-bg-color);
+    transition: color .40s;
+}
+
+/**************** MAIN ***************/
+
+.ms-jumbo {
+    
+}
+/************ MEDIA QUERIES ************/
+
+/* @media only screen and (max-device-width: 992px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  } */
