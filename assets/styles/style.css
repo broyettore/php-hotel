@@ -24,7 +24,7 @@ body {
 
 .parallax {
   background-image: url("../images/hotel-img.jpg");
-  height: 100vh;
+  min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -71,8 +71,40 @@ header h1:hover {
 
 /**************** MAIN ***************/
 
-.ms-jumbo {
-    
+#jumbo {
+    height: calc(100vh - 72px);
+}
+
+.ms-ctn {
+    height: 80%;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    opacity: 0.9;
+    border-radius: 5%;
+}
+
+#jumbo .ms-ctn > div,
+#jumbo .ms-ctn > h2 {
+    font-size: 3rem;
+}
+
+.ms-btn-info,
+.ms-btn-light {
+    padding: 10px 20px;
+    color: var(--font-color);
+}
+
+.ms-btn-info {
+    background-color: var(--alt-bg-color);
+}
+
+.ms-btn-light {
+    background-color: #218fa5;
+}
+
+.ms-btn-info:hover,
+.ms-btn-light:hover {
+    background-color: var(--headers-color);
 }
 /************ MEDIA QUERIES ************/
 

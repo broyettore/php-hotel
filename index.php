@@ -1,3 +1,47 @@
+<?php
+
+    $hotels = [
+
+        [
+            'name' => 'Hotel Belvedere',
+            'description' => 'Beautiful hotel by the sea, ideal for a family vacation.',
+            'parking' => true,
+            'vote' => 4,
+            'distance_to_center' => 10.4
+        ],
+        [
+            'name' => 'Hotel Futuro',
+            'description' => 'Green Hotel known for the amazing landscape and acces to nature !',
+            'parking' => true,
+            'vote' => 2,
+            'distance_to_center' => 2
+        ],
+        [
+            'name' => 'Hotel Rivamare',
+            'description' => 'Incredible Hotel with elevated standards and cuisine, not to mention its private beach.',
+            'parking' => false,
+            'vote' => 1,
+            'distance_to_center' => 1
+        ],
+        [
+            'name' => 'Hotel Bellavista',
+            'description' => 'Simple and minimalist Hotel, ideal for a peaceful and reaxling time with loved ones.',
+            'parking' => false,
+            'vote' => 5,
+            'distance_to_center' => 5.5
+        ],
+        [
+            'name' => 'Hotel Milano',
+            'description' => 'Traditional italian hotel, loved not only for the flawless service but also for the gentle staff and needless to say mind-blowing FOOD.',
+            'parking' => true,
+            'vote' => 2,
+            'distance_to_center' => 50
+        ],
+
+    ];
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,8 +98,45 @@
     </header>
 
     <main>
-        <section id="jumbo">
-        <div class="container ms-jumbo"></div>
+        <section id="jumbo" class="d-flex flex-column align-items-center justify-content-center">
+            <div class="container ms-ctn d-flex flex-column align-items-start justify-content-center p-3">
+                <h2 class="m-2">Hello</h2>
+                <div class="m-2">And Welcome to</div>
+                <div class="m-2" >Hotel ivory</div>
+                <h3 class="m-2">
+                    <em class="fs-5">"Where peace and luxury become a lifestyle"</em>
+                </h3>
+                <div class="cta m-2">
+                <button type="button" class="btn ms-btn-info">Booking</button>
+                <button type="button" class="btn ms-btn-light">More</button>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="d-flex flex-column align-items-center justify-content-center">
+            <div class="container ms-ctn d-flex flex-column align-items-start justify-content-center p-3">
+                <h2 class="m-2">Services</h2>
+                <div class="services-options m-2">
+                    <ul>
+                        <li>
+                            <?php echo "Name: " . $hotels[0]["name"] ?>
+                        </li>
+                        <li>
+                            <?php echo "Description: " . $hotels[0]["description"] ?>
+                        </li>
+                        <li>
+                            <?php if($hotels[0]["parking"] === true) {
+                                echo $hotels[0]["parking"] = "Parking: " . "yes";
+                            } ?>
+                        </li>
+                        <li>
+                            <?php echo "Vote: " . $hotels[0]["vote"] ?>
+                        </li>
+                        <li>
+                            <?php echo "Distance to center: " . $hotels[0]["distance_to_center"] ?>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
 </div>
